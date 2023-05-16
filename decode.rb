@@ -55,3 +55,11 @@ def decode_word(word)
     # Return the decoded word
     decoded_word
 end
+
+# Define method to decode a sentence
+def decode (sentence)
+    decoded_sentence = ''
+    sentence.split(' ').each do |word|
+        decoded_sentence += "#{decode_word(word)}"
+    end
+end
